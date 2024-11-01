@@ -1,0 +1,9 @@
+# NPM
+node_modules
+
+# Hugo
+themes
+public
+resources
+*.cache
+static/css/*
