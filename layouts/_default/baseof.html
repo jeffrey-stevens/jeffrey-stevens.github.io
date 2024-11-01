@@ -10,9 +10,14 @@
     </head>
 
     <body>
+        <header>
+            {{ partial "navbar.html" . }}
+        </header>
+
         <main>
             {{ block "main" . }} {{ end }}
         </main>
+
         <footer></footer>
     </body>
 </html>
