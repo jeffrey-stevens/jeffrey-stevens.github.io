@@ -1,0 +1,22 @@
+header {
+    nav {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        background-color: black;
+
+        ul {
+            list-style: none;
+            display: flex;
+
+            li {
+                margin: 0 15px;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
