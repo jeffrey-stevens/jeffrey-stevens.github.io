@@ -6,11 +6,13 @@
         
         <title>{{ .Title }}</title>
         
-        <link rel="stylesheet" href="{{ " css/main.css" | relUrl }}">
+        <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
     </head>
 
     <body>
-        <main></main>
+        <main>
+            {{ block "main" . }} {{ end }}
+        </main>
         <footer></footer>
     </body>
 </html>
