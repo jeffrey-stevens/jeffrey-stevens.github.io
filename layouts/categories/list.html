@@ -1,0 +1,47 @@
+{{ define "left-sidebar" }}
+{{ end }}
+
+
+{{ define "content" }}
+    <div>
+        <h1>Posts by Category</h1>
+
+        <div class="posts-list">
+            {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+                <h2>{{ $name }}</h2>
+
+                {{ range $taxonomy }}
+                    <div>
+                        <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                        <p>{{ .Summary }}</p>
+                    </div>
+                {{ end }}
+            {{ end }}
+        </div>
+    </div>
+{{ end }}
+
+
+{{ define "right-sidebar" }}
+    {{ partial "categories.html" . }}
+    {{ partial "tags.html" . }}
+{{ end }}
+
+
+{{ define "main" }}
+    <div class="column-layout">
+
+        <aside class="sidebar sidebar-left">
+            {{ block "left-sidebar" . }} {{ end }}
+        </aside>
+
+        <article class="main-column">
+            {{ block "content" . }} {{ end }}
+        </article>
+
+        <aside class="sidebar sidebar-right">
+            {{ block "right-sidebar" . }} {{ end }}
+        </aside>
+
+    </div>
+{{ end }}
