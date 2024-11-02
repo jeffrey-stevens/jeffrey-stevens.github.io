@@ -55,6 +55,10 @@ header {
    padding: 15px;
 }
 
+.sidebar-title {
+   font-weight: bold;
+}
+
 .toc {
    ul {
       list-style-type: none;
@@ -67,5 +71,22 @@ header {
 
    a {
       text-decoration: none;
+      color: black;
+   }
+}
+
+.categories {
+   ul {
+      list-style-type: none;
+      padding: 0;
+   }
+
+   li {
+      margin: 5px 0;
+   }
+
+   a {
+      text-decoration: none;
+      color: black;
    }
 }

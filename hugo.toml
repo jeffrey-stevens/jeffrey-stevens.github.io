@@ -1,3 +1,13 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
+
+[params]
+    categories = [
+        "Mathematics",
+        "Physics",
+        "Biotechnology",
+        "Technology",
+        "R",
+        "Misc"
+    ]

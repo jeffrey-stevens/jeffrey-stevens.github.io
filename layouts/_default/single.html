@@ -4,14 +4,8 @@
 
     <aside class="post-sidebar-left">
         <div class="toc">
-            <h3>Table of Contents</h3>
+            <h3 class="sidebar-title">Table of Contents</h3>
             {{ .TableOfContents }}
-            {{/*  <ul>
-                {{ $headings := .Content | markdownify | .Headings }}
-                {{ range $headings }}
-                <li><a href="#{{ .ID }}">{{ .Text }}</a></li>
-                {{ end }}
-            </ul>  */}}
         </div>
     </aside>
 
@@ -23,7 +17,18 @@
     </article>
 
     <aside class="post-sidebar-right">
-        <h3>Categories & Tags</h3>
+        <div class="categories">
+            <h3 class="sidebar-title">Categories</h3>
+            <ul>
+                {{ range .Site.Params.Categories }}
+                    <li><a href="{{ . | urlize }}">{{ . }}</a></li>
+                {{ end }}
+            </ul>
+        </div>
+
+        <div class="Tags">
+            <h3>Tags</h3>
+        </div>
     </aside>
 </div>
 
