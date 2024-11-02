@@ -23,8 +23,8 @@
     * Fix margin between taxonomy title and contents
     * Fix the conversion to lowercase?
 
-* Post list
-  * 
+* Lists
+  * Keep case of taxonomy keywords?
 
 
 ## Functionality
