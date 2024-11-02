@@ -2,6 +2,7 @@
 title = 'Sample post'
 date = 2024-11-01T21:30:03-04:00
 draft = false
+layout = "single"
 categories = ["Technology", "Misc"]
 tags = ["Hugo", "HTML", "CSS", "SCSS"]
 +++

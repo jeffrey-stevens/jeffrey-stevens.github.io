@@ -7,3 +7,6 @@ title = 'My New Hugo Site'
 [taxonomies]
     category = "categories"
     tag = "tags"
+
+[permalinks]
+    posts = "/posts/:slug/"

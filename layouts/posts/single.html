@@ -1,16 +1,16 @@
 {{ define "left-sidebar" }}
+    <div class="toc">
+        <h3>Table of Contents</h3>
+        {{ .TableOfContents }}
+    </div>
 {{ end }}
 
 
 {{ define "content" }}
-    <div>
-        <h1>Posts</h1>
-
-        <div class="posts-list">
-            {{ range .Pages.ByDate.Reverse }}
-                <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-                <p>{{ .Summary }}</p>
-            {{ end }}
+    <div class="post-content">
+        <h1>{{ .Title }}</h1>
+        <div>
+            {{ .Content }}
         </div>
     </div>
 {{ end }}

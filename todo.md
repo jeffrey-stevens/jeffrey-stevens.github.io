@@ -28,3 +28,6 @@
 
 * Highlight taxonomies pertaining to the post?
   * Or List taxonomies beneath the title of the post
+* Click the Categories title in the right sidebar and list all posts by category.
+  * Same for tags.
+* Show categories and tags in the right sidebar on the Posts page.

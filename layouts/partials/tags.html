@@ -1,0 +1,8 @@
+<div class="tags">
+    <h3>Tags</h3>
+    <ul>
+        {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+        <li><a href="">{{ $name }}</a> ({{ len $taxonomy }})</li>
+        {{ end }}
+    </ul>
+</div>
