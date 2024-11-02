@@ -54,3 +54,18 @@ header {
    max-width: 800px;
    padding: 15px;
 }
+
+.toc {
+   ul {
+      list-style-type: none;
+      padding: 0;
+   }
+
+   li {
+      margin: 5px 0;
+   }
+
+   a {
+      text-decoration: none;
+   }
+}
