@@ -3,22 +3,42 @@
 
 
 {{ define "content" }}
-    <div>
-        <h1>Posts by Category</h1>
 
-        <div class="posts-list">
-            {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
-                <h2>{{ $name }}</h2>
+    {{ if eq .Kind "taxonomy" }}
+        <div>
+            <h1>Posts by Category</h1>
 
-                {{ range $taxonomy }}
+            <div class="posts-list">
+                {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+                    <h2>{{ $name }}</h2>
+
+                    {{ range $taxonomy }}
+                        <div>
+                            <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                            <p>{{ .Summary }}</p>
+                        </div>
+                    {{ end }}
+                {{ end }}
+            </div>
+        </div>
+
+    {{ else if eq .Kind "term" }}
+        <div>
+            <h1>Posts for category: {{ .Title }}</h1>
+
+            <div class="posts-list">
+                {{ range .Pages }}
                     <div>
                         <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
                         <p>{{ .Summary }}</p>
                     </div>
+                {{ else }}
+                    <p>No posts in this category.</p>
                 {{ end }}
-            {{ end }}
+            </div>
         </div>
-    </div>
+
+    {{ end }}
 {{ end }}
 
 
