@@ -37,3 +37,20 @@ header {
 
    }
 }
+
+.post-layout {
+   display: grid;
+   grid-template-columns: 1fr minmax(200px, 800px) 1fr;
+   gap: 20px;
+   max-width: 1200px;
+}
+
+.post-sidebar-left,
+.post-sidebar-right {
+   padding: 15px;
+}
+
+.post-content {
+   max-width: 800px;
+   padding: 15px;
+}

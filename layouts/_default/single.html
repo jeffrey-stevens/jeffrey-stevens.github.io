@@ -1,0 +1,20 @@
+{{ define "main" }}
+
+<div class="post-layout">
+    <aside class="post-sidebar-left">
+        <h3>Table of Contents</h3>
+    </aside>
+
+    <main class="post-content">
+        <h1>{{ .Title }}</h1>
+        <div>
+            {{ .Content }}
+        </div>
+    </main>
+
+    <aside class="post-sidebar-right">
+        <h3>Categories & Tags</h3>
+    </aside>
+</div>
+
+{{end}}
