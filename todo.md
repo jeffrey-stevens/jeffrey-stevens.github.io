@@ -1,5 +1,10 @@
 # Todo
 
+## Fixes
+
+* Posts summaries include headers.
+  * How to implement a summary paragraph?
+
 ## Styling improvements
 
 * Table of Contents
@@ -18,3 +23,8 @@
 * Make responsive
 * Enable links for categories
 * Enable links for taxonomies
+
+## Features
+
+* Highlight taxonomies pertaining to the post?
+  * Or List taxonomies beneath the title of the post
