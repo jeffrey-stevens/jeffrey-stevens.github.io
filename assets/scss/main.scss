@@ -75,7 +75,25 @@ header {
    }
 }
 
+
 .categories {
+   ul {
+      list-style-type: none;
+      padding: 0;
+   }
+
+   li {
+      margin: 5px 0;
+   }
+
+   a {
+      text-decoration: none;
+      color: black;
+   }
+}
+
+
+.tags {
    ul {
       list-style-type: none;
       padding: 0;

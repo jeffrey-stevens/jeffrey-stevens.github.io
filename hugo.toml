@@ -11,3 +11,7 @@ title = 'My New Hugo Site'
         "R",
         "Misc"
     ]
+
+[taxonomies]
+    category = "categories"
+    tag = "tags"
