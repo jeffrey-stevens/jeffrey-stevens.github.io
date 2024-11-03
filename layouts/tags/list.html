@@ -50,19 +50,21 @@
 
 
 {{ define "main" }}
-    <div class="column-layout">
+    <div class="container">
+        <div class="columns">
 
-        <aside class="sidebar sidebar-left">
-            {{ block "left-sidebar" . }} {{ end }}
-        </aside>
+            <aside class="column is-2">
+                {{ block "left-sidebar" . }} {{ end }}
+            </aside>
 
-        <article class="main-column">
-            {{ block "content" . }} {{ end }}
-        </article>
+            <article class="column is-8">
+                {{ block "content" . }} {{ end }}
+            </article>
 
-        <aside class="sidebar sidebar-right">
-            {{ block "right-sidebar" . }} {{ end }}
-        </aside>
+            <aside class="column is-2">
+                {{ block "right-sidebar" . }} {{ end }}
+            </aside>
 
+        </div>
     </div>
 {{ end }}
