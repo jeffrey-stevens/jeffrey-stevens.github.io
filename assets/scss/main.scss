@@ -1,3 +1,9 @@
-@import 'partials/_variables';
-@import 'partials/_base';
-@import 'partials/_layouts';
+@use "../../node_modules/bulma/sass/base";
+@use "../../node_modules/bulma/sass/themes";
+@use "../../node_modules/bulma/sass/components/navbar";
+@use "../../node_modules/bulma/sass/grid";
+
+
+// @import 'partials/_variables';
+// @import 'partials/_base';
+// @import 'partials/_layouts';

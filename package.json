@@ -15,5 +15,8 @@
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.47",
     "sass": "^1.80.5"
+  },
+  "dependencies": {
+    "bulma": "^1.0.2"
   }
 }

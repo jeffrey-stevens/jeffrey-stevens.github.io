@@ -1,13 +1,20 @@
-<nav>
-    <div class="nav-container">
-        <div class="nav-title">
-            <a href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
-        </div>
+<nav class="navbar is-fixed-top is-dark" role="navigation">
 
-        <ul class="nav-links">
-            <li><a href="{{ "/posts/" | relURL }}">Posts</a></li>
-            <li><a href="{{ "/projects/" | relURL }}">Projects</a></li>
-            <li><a href="{{ "/about/" | relURL }}">About</a></li>
-        </ul>
+    <div class="navbar-brand">
+        <a class="navbar-item" href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
     </div>
+
+    <div class="navbar-menu">
+        <div class="navbar-end">
+            <a class="navbar-item" href="{{ "/posts/" | relURL }}">Posts</a>
+            <a class="navbar-item" href="{{ "/projects/" | relURL }}">Projects</a>
+            <a class="navbar-item" href="{{ "/about/" | relURL }}">About</a>
+        </div>
+    </div>
+
+    {{/*  <ul class="navbar-menu nav-links">
+        <li><a href="{{ "/posts/" | relURL }}">Posts</a></li>
+        <li><a href="{{ "/projects/" | relURL }}">Projects</a></li>
+        <li><a href="{{ "/about/" | relURL }}">About</a></li>
+    </ul>  */}}
 </nav>
