@@ -6,6 +6,7 @@ layout: "single"
 slug: "sample"
 categories: ["Technology", "R"]
 tags: ["Programming", "R", "Shiny", "Machine Learning"]
+featured: true
 ---
 
 ## Project overview

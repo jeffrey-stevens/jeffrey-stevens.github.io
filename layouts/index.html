@@ -1,0 +1,64 @@
+{{ define "left-sidebar" }}
+{{ end }}
+
+
+{{ define "content" }}
+
+    <div class="content">
+
+        <div class="block">
+            <h1>Featured projects</h1>
+
+            <div class="projects-list">
+                {{ $projects := where .Site.RegularPages "Section" "projects" }}
+                {{ $featured_projects := where $projects "Params.featured" true }}
+                {{ range $featured_projects }}
+                    <h4><a class="title is-4" href="{{ .Permalink }}">{{ .Title }}</a></h4>
+                    <p>{{ .Summary }}</p>
+                {{ end }}
+            </div>
+        </div>
+
+        <div class="block">
+            <h1>Featured posts</h1>
+
+            <div class="posts-list">
+                {{ $posts := where .Site.RegularPages "Section" "posts" }}
+                {{ $featured_posts := where $posts "Params.featured" true }}
+                {{ range $featured_posts }}
+                    <h4><a class="title is-4" href="{{ .Permalink }}">{{ .Title }}</a></h4>
+                    <p>{{ .Summary }}</p>
+                {{ end }}
+            </div>
+        </div>
+
+    </div>
+
+{{ end }}
+
+
+{{ define "right-sidebar" }}
+    {{ partial "categories.html" . }}
+    {{ partial "tags.html" . }}
+{{ end }}
+
+
+{{ define "main" }}
+    <div class="container">
+        <div class="columns">
+
+            <aside class="column is-2">
+                {{ block "left-sidebar" . }} {{ end }}
+            </aside>
+
+            <article class="column is-8">
+                {{ block "content" . }} {{ end }}
+            </article>
+
+            <aside class="column is-2">
+                {{ block "right-sidebar" . }} {{ end }}
+            </aside>
+
+        </div>
+    </div>
+{{ end }}

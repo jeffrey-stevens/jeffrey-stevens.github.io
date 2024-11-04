@@ -6,6 +6,7 @@ layout = "single"
 slug = "sample"
 categories = ["Technology", "Misc"]
 tags = ["Hugo", "HTML", "CSS", "SCSS"]
+featured = true
 +++
 
 ## Description of the sample post
