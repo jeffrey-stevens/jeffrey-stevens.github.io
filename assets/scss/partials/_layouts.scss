@@ -1,65 +1,12 @@
-// Navbar layout
-
-header {
-   nav {
-      max-width: $navbar-max-width;
-      margin: 0 auto;
-      background-color: $navbar-background-color;
-
-      .nav-container {
-         display: flex;
-         justify-content: space-between;
-         align-items: center;
-         margin: 0 15px;
-         font-family: sans-serif;
-
-         .nav-title {
-            float: left;
-            font-size: 1.5em;
-            font-weight: bold;
-         }
-
-         .nav-links {
-            float: right;
-            list-style: none;
-            display: flex;
-            float: right;
-
-            li {
-               margin: 0 15px;
-            }
-         }
-
-         a {
-            text-decoration: none;
-            color: $navbar-text-color;
-         }
-
-      }
-
-   }
-}
-
-
-// Column layout
-
-.column-layout {
-   display: grid;
-   grid-template-columns: 1fr minmax($col-content-min-width, $col-content-max-width) 1fr;
-   gap: 20px;
-   max-width: $page-max-width;
-}
-
-
 // Sidebars
 
-.sidebar {
-   padding: 15px;
+// .sidebar {
+//    padding: 15px;
 
-   h3 {
-      font-weight: bold;
-   }
-}
+//    h3 {
+//       font-weight: bold;
+//    }
+// }
 
 .sidebar-left {
 
@@ -70,19 +17,32 @@ header {
 }
 
 
-.toc {
-   ul {
+.content .toc {
+   ol, ul {
       list-style-type: none;
       padding: 0;
-   }
+      margin-left: $toc-indent;
 
-   li {
-      margin: 5px 0;
+      li {
+         // margin: 0 0 $toc-spacing 0;
+
+         ol, ul {
+            list-style-type: none;
+            padding: 0;
+            margin-left: $toc-indent;
+            margin-top: $toc-nested-spacing;
+            margin-bottom: $toc-nested-spacing;
+
+            // li {
+            //    margin: 0 0 $toc-spacing 0;
+            // }
+         }
+      }
+
    }
 
    a {
       text-decoration: none;
-      color: black;
    }
 }
 
@@ -99,7 +59,6 @@ header {
 
    a {
       text-decoration: none;
-      color: black;
    }
 }
 
@@ -116,7 +75,6 @@ header {
 
    a {
       text-decoration: none;
-      color: black;
    }
 }
 

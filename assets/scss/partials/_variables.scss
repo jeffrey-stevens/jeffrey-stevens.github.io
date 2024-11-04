@@ -3,9 +3,12 @@ $page-max-width: 1200px;
 
 // Navbar
 $navbar-max-width: $page-max-width;
-$navbar-background-color: black;
-$navbar-text-color: white;
 
 // Column layout
 $col-content-min-width: 200px;
 $col-content-max-width: 800px;
+
+
+// Table of contents
+$toc-indent: 10px;
+$toc-nested-spacing: 5px;

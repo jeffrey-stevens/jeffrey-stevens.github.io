@@ -16,6 +16,18 @@ This is a test of the layout of post pages.  The main text should be in a center
 
 The page also lists the table of contents of the post in the left sidebar.  Each link is clickable.  Note that this starts with h2 headings only.
 
-### Indentation
+### ToC Levels
 
-The table of contents isn't currently indented, which makes it difficult to read.
+The table of contents only lists headers two levels deep.  The second level is indented by 10px.
+
+#### Proof of correct level depth
+
+This demonstrates that only the top two heading levels are shown in the ToC.
+
+### Other content
+
+Here is some other content.
+
+## Back to first level
+
+This is more content at the first level.

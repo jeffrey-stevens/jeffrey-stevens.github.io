@@ -1,14 +1,18 @@
 @use "../../node_modules/bulma/sass/base";
 @use "../../node_modules/bulma/sass/themes";
 @use "../../node_modules/bulma/sass/grid";
+
+// Components
 @use "../../node_modules/bulma/sass/components/navbar";
-@use "../../node_modules/bulma/sass/helpers/typography";
 
 // Elements
 @use "../../node_modules/bulma/sass/elements/content";
 @use "../../node_modules/bulma/sass/elements/title";
 
+// Helpers
+@use "../../node_modules/bulma/sass/helpers/typography";
 
-// @import 'partials/_variables';
+
+@import 'partials/_variables';
 // @import 'partials/_base';
-// @import 'partials/_layouts';
+@import 'partials/_layouts';
