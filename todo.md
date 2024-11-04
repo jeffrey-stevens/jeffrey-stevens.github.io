@@ -9,22 +9,29 @@
 ## Styling improvements
 
 * General
-  * Choose font scheme
+  * Need spacing between main area and navbar
 
 * Posts 
-  * More readable font
   * Content
-    * Make narrower
+    * Make narrower?
   * Table of Contents
     * Make wider
-    * Indent according to heading depth
-      * Or maybe number
   * Taxonomies
     * Fix margin between taxonomy title and contents
     * Fix the conversion to lowercase?
 
 * Lists
   * Keep case of taxonomy keywords?
+
+
+## Components
+
+* Footer
+  * Name
+  * Copyright
+  * Vertical spacing
+  * Built with ...
+* Toggle light/dark in navbar
 
 
 ## Functionality

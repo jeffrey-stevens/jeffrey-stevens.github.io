@@ -1,0 +1,27 @@
+$toc-indent: 10px;
+$toc-nested-spacing: 5px;
+
+
+.content .toc {
+   ol, ul {
+      list-style-type: none;
+      padding: 0;
+      margin-left: $toc-indent;
+
+      li {
+
+         ol, ul {
+            list-style-type: none;
+            padding: 0;
+            margin-left: $toc-indent;
+            margin-top: $toc-nested-spacing;
+            margin-bottom: $toc-nested-spacing;
+         }
+      }
+
+   }
+
+   a {
+      text-decoration: none;
+   }
+}
