@@ -3,7 +3,10 @@
 @use "../../node_modules/bulma/sass/grid";
 @use "../../node_modules/bulma/sass/components/navbar";
 @use "../../node_modules/bulma/sass/helpers/typography";
+
+// Elements
 @use "../../node_modules/bulma/sass/elements/content";
+@use "../../node_modules/bulma/sass/elements/title";
 
 
 // @import 'partials/_variables';
