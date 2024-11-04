@@ -2,8 +2,8 @@
 
     <div class="content">
         <div class="categories">
-            <h5><a href="/categories/">Categories</a></h5>
-            <ul class="ml-4">
+            <h5 class="mb-2"><a href="/categories/">Categories</a></h5>
+            <ul class="ml-4 mt-2">
                 {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
                 <li>
                     <a href="{{ "/categories/" | relLangURL }}{{ $name | urlize }}">

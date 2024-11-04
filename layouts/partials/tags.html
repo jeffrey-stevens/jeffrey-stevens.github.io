@@ -1,8 +1,8 @@
 <div class="block">
     <div class="content">
         <div class="tags">
-            <h5><a href="/tags/">Tags</a></h5>
-            <ul class="ml-4">
+            <h5 class="mb-2"><a href="/tags/">Tags</a></h5>
+            <ul class="ml-4 mt-2">
                 {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
                 <li>
                     <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}">
