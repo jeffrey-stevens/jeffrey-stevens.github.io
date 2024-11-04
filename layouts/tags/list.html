@@ -4,41 +4,39 @@
 
 {{ define "content" }}
 
-    {{ if eq .Kind "taxonomy" }}
-        <div>
-            <h1>Posts by Tag</h1>
+    <div class="content">
+        {{ if eq .Kind "taxonomy" }}
+                <h1>Posts by Tag</h1>
 
-            <div class="posts-list">
-                {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
-                    <h2>{{ $name }}</h2>
+                <div class="posts-list">
+                    {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+                        <h2>{{ $name }}</h2>
 
-                    {{ range $taxonomy }}
+                        {{ range $taxonomy }}
+                            <div>
+                                <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                                <p>{{ .Summary }}</p>
+                            </div>
+                        {{ end }}
+                    {{ end }}
+                </div>
+
+        {{ else if eq .Kind "term" }}
+                <h1>Posts for tag: {{ .Title }}</h1>
+
+                <div class="posts-list">
+                    {{ range .Pages }}
                         <div>
                             <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
                             <p>{{ .Summary }}</p>
                         </div>
+                    {{ else }}
+                        <p>No posts for this tag.</p>
                     {{ end }}
-                {{ end }}
-            </div>
-        </div>
+                </div>
 
-    {{ else if eq .Kind "term" }}
-        <div>
-            <h1>Posts for tag: {{ .Title }}</h1>
-
-            <div class="posts-list">
-                {{ range .Pages }}
-                    <div>
-                        <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-                        <p>{{ .Summary }}</p>
-                    </div>
-                {{ else }}
-                    <p>No posts for this tag.</p>
-                {{ end }}
-            </div>
-        </div>
-
-    {{ end }}
+        {{ end }}
+    </div>
 
 {{ end }}
 

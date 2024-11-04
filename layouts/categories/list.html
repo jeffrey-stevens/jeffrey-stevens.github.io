@@ -4,8 +4,8 @@
 
 {{ define "content" }}
 
-    {{ if eq .Kind "taxonomy" }}
-        <div>
+    <div class="content">
+        {{ if eq .Kind "taxonomy" }}
             <h1>Posts by Category</h1>
 
             <div class="posts-list">
@@ -20,10 +20,8 @@
                     {{ end }}
                 {{ end }}
             </div>
-        </div>
 
-    {{ else if eq .Kind "term" }}
-        <div>
+        {{ else if eq .Kind "term" }}
             <h1>Posts for category: {{ .Title }}</h1>
 
             <div class="posts-list">
@@ -36,9 +34,9 @@
                     <p>No posts in this category.</p>
                 {{ end }}
             </div>
-        </div>
 
-    {{ end }}
+        {{ end }}
+    </div>
 
 {{ end }}
 
