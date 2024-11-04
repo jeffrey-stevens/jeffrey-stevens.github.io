@@ -2,8 +2,10 @@
 
 ## Fixes
 
-* Posts summaries include headers.
+* Summaries for posts include headers, etc.
   * How to implement a summary paragraph?
+* Categories list page groups posts and projects together
+* Rename Categories to Subects, and Tags to Topics
 
 
 ## Styling improvements
@@ -17,7 +19,6 @@
   * Table of Contents
     * Make wider
   * Taxonomies
-    * Fix margin between taxonomy title and contents
     * Fix the conversion to lowercase?
 
 * Lists
@@ -32,6 +33,7 @@
   * Vertical spacing
   * Built with ...
 * Toggle light/dark in navbar
+* Articles and blog vs. posts
 
 
 ## Functionality
@@ -42,6 +44,10 @@
 
 
 ## Features
+
+* Navbar
+  * After clicking a menu item, keep it selected
+    * So that Categories only apples e.g. to Posts
 
 * Posts
   * Highlight taxonomies pertaining to the post?
@@ -54,3 +60,6 @@
 * Posts list
   * Featured posts first, then all posts
   * Give date alongside post summary
+
+* Categories and tags
+  * For Category/Tag lists, highlight the selected item

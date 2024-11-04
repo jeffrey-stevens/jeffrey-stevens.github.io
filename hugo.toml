@@ -10,6 +10,7 @@ title = 'Jeff Stevens'
 
 [permalinks]
     posts = "/posts/:slug/"
+    projects = "/projects/:slug/"
 
 [markup]
     [markup.tableOfContents]

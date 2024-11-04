@@ -1,7 +1,7 @@
 +++
 title = 'Sample post'
 date = 2024-11-01T21:30:03-04:00
-draft = false
+draft = true
 layout = "single"
 slug = "sample"
 categories = ["Technology", "Misc"]
