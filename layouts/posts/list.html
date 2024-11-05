@@ -8,8 +8,7 @@
 
         <div class="posts-list">
             {{ range .Pages.ByDate.Reverse }}
-                <h4><a class="title is-4" href="{{ .Permalink }}">{{ .Title }}</a></h4>
-                <p>{{ .Summary }}</p>
+                {{ .Render "summary" }}
             {{ end }}
         </div>
     </div>

@@ -25,6 +25,11 @@
   * Keep case of taxonomy keywords?
 
 
+## Tweaks
+
+* Give date for each project/post summary
+
+
 ## Components
 
 * Footer

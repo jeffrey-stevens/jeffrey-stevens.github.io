@@ -14,10 +14,7 @@
 
                         {{ range $taxonomy }}
                             <div>
-                                <h4 class="title is-4">
-                                    <a href="{{ .Permalink }}">{{ .Title }}</a>
-                                </h4>
-                                <p>{{ .Summary }}</p>
+                                {{ .Render "summary" }}
                             </div>
                         {{ end }}
                     {{ end }}
@@ -29,10 +26,7 @@
                 <div class="posts-list">
                     {{ range .Pages }}
                         <div>
-                            <h4 class="title is-4">
-                                <a href="{{ .Permalink }}">{{ .Title }}</a>
-                            </h4>
-                            <p>{{ .Summary }}</p>
+                            {{ .Render "summary" }}
                         </div>
                     {{ else }}
                         <p>No posts for this tag.</p>

@@ -13,8 +13,7 @@
                 {{ $projects := where .Site.RegularPages "Section" "projects" }}
                 {{ $featured_projects := where $projects "Params.featured" true }}
                 {{ range $featured_projects }}
-                    <h4><a class="title is-4" href="{{ .Permalink }}">{{ .Title }}</a></h4>
-                    <p>{{ .Summary }}</p>
+                    {{ .Render "summary" }}
                 {{ end }}
             </div>
         </div>
@@ -26,8 +25,7 @@
                 {{ $posts := where .Site.RegularPages "Section" "posts" }}
                 {{ $featured_posts := where $posts "Params.featured" true }}
                 {{ range $featured_posts }}
-                    <h4><a class="title is-4" href="{{ .Permalink }}">{{ .Title }}</a></h4>
-                    <p>{{ .Summary }}</p>
+                    {{ .Render "summary" }}
                 {{ end }}
             </div>
         </div>
