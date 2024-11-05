@@ -1,0 +1,46 @@
+{{ define "left-sidebar" }}
+{{ end }}
+
+
+{{ define "content" }}
+
+    <div class="content">
+        <h1>Posts for tag: {{ .Title }}</h1>
+
+        <div class="posts-list">
+            {{ range .Pages }}
+                {{ .Render "summary" }}
+            {{ else }}
+                <p>No content for this tag.</p>
+            {{ end }}
+        </div>
+    </div>
+
+{{ end }}
+
+
+{{ define "right-sidebar" }}
+    {{ partial "categories.html" . }}
+    {{ partial "tags.html" . }}
+{{ end }}
+
+
+{{ define "main" }}
+    <div class="container">
+        <div class="columns">
+
+            <aside class="column is-2">
+                {{ block "left-sidebar" . }} {{ end }}
+            </aside>
+
+            <article class="column is-8">
+                {{ block "content" . }} {{ end }}
+            </article>
+
+            <aside class="column is-2">
+                {{ block "right-sidebar" . }} {{ end }}
+            </aside>
+
+        </div>
+    </div>
+{{ end }}
