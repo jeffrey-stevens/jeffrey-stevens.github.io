@@ -15,7 +15,24 @@
         </header>
 
         <div class="site-layout">
-            {{ block "main" . }} {{ end }}
+
+            <div class="container">
+                <div class="columns">
+            
+                    <aside class="column is-2 content-column">
+                        {{ block "left-sidebar" . }} {{ end }}
+                    </aside>
+            
+                    <article class="column is-8 content-column">
+                        {{ block "main-content" . }} {{ end }}
+                    </article>
+            
+                    <aside class="column is-2 content-column">
+                        {{ block "right-sidebar" . }} {{ end }}
+                    </aside>
+            
+                </div>
+            </div>
         </div>
 
         {{ partial "footer.html" . }}

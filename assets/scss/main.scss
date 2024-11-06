@@ -4,4 +4,5 @@
 @use 'components/toc' as toc;
 @use 'components/categories' as categories;
 @use 'components/tags' as tags;
+@use 'layout/content' as content;
 @use 'pages/posts' as posts;

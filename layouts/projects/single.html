@@ -3,7 +3,7 @@
 {{ end }}
 
 
-{{ define "content" }}
+{{ define "main-content" }}
     <div class="content">
         <div class="project-content">
             <h1>{{ .Title }}</h1>
@@ -18,25 +18,4 @@
 {{ define "right-sidebar" }}
     {{ partial "categories.html" . }}
     {{ partial "tags.html" . }}
-{{ end }}
-
-
-{{ define "main" }}
-    <div class="container">
-        <div class="columns">
-
-            <aside class="column is-2">
-                {{ block "left-sidebar" . }} {{ end }}
-            </aside>
-
-            <article class="column is-8">
-                {{ block "content" . }} {{ end }}
-            </article>
-
-            <aside class="column is-2">
-                {{ block "right-sidebar" . }} {{ end }}
-            </aside>
-
-        </div>
-    </div>
 {{ end }}
