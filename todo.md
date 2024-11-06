@@ -1,5 +1,11 @@
 # Todo
 
+## Todos
+
+* Add license
+* Add .gitignore to empty SCSS folders
+
+
 ## Fixes
 
 * Summaries for posts include headers, etc.
@@ -32,11 +38,6 @@
 
 ## Components
 
-* Footer
-  * Name
-  * Copyright
-  * Vertical spacing
-  * Built with ...
 * Toggle light/dark in navbar
 * Articles and blog vs. posts
 
@@ -44,8 +45,6 @@
 ## Functionality
 
 * Make responsive
-* Enable links for categories
-* Enable links for taxonomies
 
 
 ## Features
