@@ -1,0 +1,20 @@
+<footer class="footer">
+    <div class="content">
+
+        <div class="copyright">
+            <p>
+                &copy;&nbsp;
+                {{ $copyrightYear := .Site.Params.copyrightYear }}
+                {{ $currentYear := time.Now.Year }}
+                {{ if gt $currentYear $copyrightYear}}
+                    {{ string $copyrightYear }} &ndash; {{ string $currentYear}}
+                {{ else }}
+                    {{ string $copyrightYear }}
+                {{ end }}
+                {{ .Site.Params.name }}.
+                All rights reserved. 
+            </p>
+        </div>
+
+    </div>
+</footer>

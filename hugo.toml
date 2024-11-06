@@ -2,8 +2,6 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Jeff Stevens'
 
-[params]
-
 [taxonomies]
     category = "categories"
     tag = "tags"
@@ -17,3 +15,7 @@ title = 'Jeff Stevens'
         startLevel = 2
         endLevel = 3
         ordered = false
+
+[params]
+    name = "Jeffrey Stevens"
+    copyrightYear = 2023

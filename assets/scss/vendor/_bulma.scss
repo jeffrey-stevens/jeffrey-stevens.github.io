@@ -10,7 +10,9 @@
 @use "../../../node_modules/bulma/sass/elements/title";
 @use "../../../node_modules/bulma/sass/elements/block";
 
-
 // Helpers
 @use "../../../node_modules/bulma/sass/helpers/typography";
 @use "../../../node_modules/bulma/sass/helpers/spacing";
+
+// Layout
+@use "../../../node_modules/bulma/sass/layout/footer";
