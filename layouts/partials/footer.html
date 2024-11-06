@@ -1,7 +1,7 @@
 <footer class="footer">
-    <div class="content">
+    <div class="content has-text-centered">
 
-        <div class="copyright">
+        <div class="copyright mb-2">
             <p>
                 &copy;&nbsp;
                 {{ $copyrightYear := .Site.Params.copyrightYear }}
@@ -16,5 +16,9 @@
             </p>
         </div>
 
+        <div class="acknowledgement mt-2">
+            Build with <a href="https://gohugo.io/">Hugo</a>
+            and <a href="https://bulma.io/">Bulma</a>.
+        </div>
     </div>
 </footer>

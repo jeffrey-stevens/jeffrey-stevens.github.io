@@ -15,4 +15,6 @@
 @use "../../../node_modules/bulma/sass/helpers/spacing";
 
 // Layout
-@use "../../../node_modules/bulma/sass/layout/footer";
+@use "../../../node_modules/bulma/sass/layout/footer" with (
+    $footer-padding: 1rem,
+);
