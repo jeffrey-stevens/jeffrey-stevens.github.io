@@ -47,7 +47,8 @@
 ## Functionality
 
 * Make responsive
-* List featured articles before all articles
+* List featured projects/articles/posts before all other content
+* On home page, include a link view more content
 
 
 ## Features
@@ -66,7 +67,6 @@
 
 * Posts list
   * Featured posts first, then all posts
-  * Give date alongside post summary
 
 * Categories and tags
   * For Category/Tag lists, highlight the selected item

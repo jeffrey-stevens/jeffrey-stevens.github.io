@@ -4,12 +4,10 @@
 
 
 {{ define "main-content" }}
-    <div class="content">
-        <div class="project-content">
-            <h1>{{ .Title }}</h1>
-            <div>
-                {{ .Content }}
-            </div>
+    <div class="content post-content">
+        <h1>{{ .Title }}</h1>
+        <div>
+            {{ .Content }}
         </div>
     </div>
 {{ end }}
