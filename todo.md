@@ -29,6 +29,7 @@
 
 * Lists
   * Keep case of taxonomy keywords?
+  * Indent posts under taxonomy terms?
 
 * Links
   * Dotted underline for title links?
