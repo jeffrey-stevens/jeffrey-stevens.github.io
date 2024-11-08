@@ -1,0 +1,21 @@
+{{ define "left-sidebar" }}
+{{ end }}
+
+
+{{ define "main-content" }}
+    <div class="content">
+        <h1 class="mb-5">Articles</h1>
+
+        <div class="posts-list">
+            {{ range .Pages.ByDate.Reverse }}
+                {{ .Render "summary" }}
+            {{ end }}
+        </div>
+    </div>
+{{ end }}
+
+
+{{ define "right-sidebar" }}
+    {{ partial "categories.html" . }}
+    {{ partial "tags.html" . }}
+{{ end }}

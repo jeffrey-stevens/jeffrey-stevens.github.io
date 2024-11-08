@@ -1,0 +1,21 @@
+{{ define "left-sidebar" }}
+    {{ partial "toc" . }}
+{{ end }}
+
+
+{{ define "main-content" }}
+    <div class="content">
+        <div class="post-content">
+            <h1>{{ .Title }}</h1>
+            <div>
+                {{ .Content }}
+            </div>
+        </div>
+    </div>
+{{ end }}
+
+
+{{ define "right-sidebar" }}
+    {{ partial "categories.html" . }}
+    {{ partial "tags.html" . }}
+{{ end }}

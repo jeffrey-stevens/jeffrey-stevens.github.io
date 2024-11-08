@@ -37,9 +37,6 @@
 
 ## Tweaks
 
-* Give date for each project/post summary
-* Change archetypes to use YAML instead of TOML
-
 
 ## Components
 
@@ -50,6 +47,7 @@
 ## Functionality
 
 * Make responsive
+* List featured articles before all articles
 
 
 ## Features
@@ -72,3 +70,8 @@
 
 * Categories and tags
   * For Category/Tag lists, highlight the selected item
+
+
+## Refactor
+
+* Move all single.html to under _default/.
