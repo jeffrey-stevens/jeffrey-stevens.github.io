@@ -34,6 +34,7 @@
 ## Tweaks
 
 * Give date for each project/post summary
+* Change archetypes to use YAML instead of TOML
 
 
 ## Components

@@ -3,6 +3,7 @@
         <header>
             <h4><a class="title is-4" href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
         </header>
+        <p class="is-italic">{{ .Date.Format "January 2, 2006" }}</p>
         <p>{{ .Summary }}</p>
     </article>
 </div>
