@@ -30,6 +30,9 @@
 * Lists
   * Keep case of taxonomy keywords?
 
+* Links
+  * Dotted underline for title links?
+
 
 ## Tweaks
 

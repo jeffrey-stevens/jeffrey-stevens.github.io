@@ -1,9 +1,9 @@
 <div class="block">
     <article>
-        <header>
+        <header class="mb-4">
             <h4><a class="title is-4" href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
+            <p class="is-italic">{{ .Date.Format "January 2, 2006" }}</p>
         </header>
-        <p class="is-italic">{{ .Date.Format "January 2, 2006" }}</p>
         <p>{{ .Summary }}</p>
     </article>
 </div>

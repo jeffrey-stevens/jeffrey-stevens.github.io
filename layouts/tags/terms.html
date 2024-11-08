@@ -5,11 +5,11 @@
 {{ define "main-content" }}
 
     <div class="content">
-        <h1>Content by Tag</h1>
+        <h1 class="mb-6">Content by Tag</h1>
 
         <div class="posts-list">
             {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
-                <h2>{{ $name }}</h2>
+                <h2 class="mb-5">{{ $name }}</h2>
 
                 {{ range $taxonomy }}
                     {{ .Render "summary" }}
