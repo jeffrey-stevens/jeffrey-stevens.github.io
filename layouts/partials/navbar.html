@@ -5,9 +5,16 @@
             href="{{ "/" | relURL }}">
             {{ .Site.Title }}
         </a>
+
+        <a role="button" class="navbar-burger" data-target="navbarMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
     </div>
 
-    <div class="navbar-menu">
+    <div id="navbarMenu" class="navbar-menu">
         <div class="navbar-end">
             <a class="navbar-item" href="{{ "/projects/" | relURL }}">Projects</a>
             <a class="navbar-item" href="{{ "/articles/" | relURL }}">Articles</a>
