@@ -3,7 +3,6 @@
 ## Todos
 
 * Add license
-* Add .gitignore to empty SCSS folders
 
 
 ## Fixes
@@ -74,4 +73,8 @@
 
 ## Refactor
 
-* Move all single.html to under _default/.
+
+
+## Optional
+
+* Bundle scripts with Hugo's js.Bundle function.
