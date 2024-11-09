@@ -5,10 +5,25 @@
 
 {{ define "main-content" }}
     <div class="content main-content">
-        <h1>{{ .Title }}</h1>
-        <div>
-            {{ .Content }}
-        </div>
+        <article>
+            <header>
+                <h1>{{ .Title }}</h1>
+                <p class="is-italic">{{ .Date.Format "January 2, 2006" }}</p>
+                <p>{{ .Summary }}</p>
+            </header>
+
+            {{ if .TableOfContents }}
+                <div class="block toc">
+                    <h2>In this article</h2>
+                    {{ .TableOfContents }}
+                </div>
+            {{ end}}
+            
+            <main>
+                {{ $content := replace .Content .Summary "" }}
+                {{ $content | safeHTML }}
+            </main>
+        </article>
     </div>
 {{ end }}
 

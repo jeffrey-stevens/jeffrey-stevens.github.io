@@ -71,6 +71,11 @@
 * Categories and tags
   * For Category/Tag lists, highlight the selected item
 
+* ToC
+  * Display the ToC in the article when the ToC sidebar is hidden.
+  * Include an option in content front matter for enabling/disabling the ToC (the ToC will be enabled by default).
+  * Make the ToC sidebar static
+
 
 ## Refactor
 
