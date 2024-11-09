@@ -13,11 +13,11 @@
             </header>
 
             {{ if .TableOfContents }}
-                <div class="block toc">
+                <div class="box toc">
                     <h2>In this article</h2>
                     {{ .TableOfContents }}
                 </div>
-            {{ end}}
+            {{ end }}
             
             <main>
                 {{ $content := replace .Content .Summary "" }}
