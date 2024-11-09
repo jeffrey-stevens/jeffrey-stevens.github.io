@@ -9,6 +9,10 @@ tags = ["Hugo", "HTML", "CSS", "SCSS"]
 featured = true
 +++
 
+This is a summary of a sample post.  The purpose of this post is to see how Hugo and Bulma render post content.
+
+<!--more-->
+
 ## Description of the sample post
 
 This is a test of the layout of post pages.  The main text should be in a centered column 800 pixels wide.  There should be a column to the left for table of contents, and a column to the right for categories and tags.

@@ -3,6 +3,7 @@
 ## Todos
 
 * Add license
+* Add an About page
 
 
 ## Fixes
