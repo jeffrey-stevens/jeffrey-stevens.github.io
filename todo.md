@@ -37,6 +37,8 @@
 
 ## Tweaks
 
+* Don't collapse left column when switching to tablet mode.
+
 
 ## Components
 
