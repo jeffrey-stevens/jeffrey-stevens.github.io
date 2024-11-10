@@ -12,6 +12,7 @@
   * How to implement a summary paragraph?
 * Categories list page groups posts and projects together
 * Rename Categories to Subects, and Tags to Topics
+* Don't display ToC when there are no headings.
 
 
 ## Styling improvements
