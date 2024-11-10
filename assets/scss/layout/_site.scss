@@ -1,0 +1,21 @@
+@use '../abstracts/variables' as *;
+
+
+.site-layout {
+    padding: 3rem 1rem;
+}
+
+.columns-layout {
+    justify-content: center;
+}
+
+.sidebar {
+    min-width: $sidebar-min-width;
+    max-width: $sidebar-max-width;
+    flex-shrink: 0;
+}
+
+.main-column {
+   max-width: $main-column-max-width;
+   flex-grow: 1; 
+}

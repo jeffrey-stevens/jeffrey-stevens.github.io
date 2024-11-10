@@ -17,6 +17,7 @@
 @use "../../../node_modules/bulma/sass/helpers/color";
 
 // Layout
+@use "../../../node_modules/bulma/sass/layout/section";
 @use "../../../node_modules/bulma/sass/layout/footer" with (
     $footer-padding: 1rem,
 );

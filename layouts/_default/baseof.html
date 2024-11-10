@@ -8,26 +8,31 @@
             {{ partial "navbar.html" . }}
         </header>
 
-        <div class="site-layout">
+        <section class="section site-layout">
 
             <div class="container">
-                <div class="columns">
+                <div class="columns columns-layout">
             
-                    <aside class="column is-2 content-column">
-                        {{ block "left-sidebar" . }} {{ end }}
+                    <aside class="column is-2 sidebar">
+                        <div>
+                            {{ block "left-sidebar" . }} {{ end }}
+                        </div>
                     </aside>
             
-                    <article class="column is-8 content-column">
+                    <article class="column is-8 is-flex-grow-1 main-column">
                         {{ block "main-content" . }} {{ end }}
                     </article>
             
-                    <aside class="column is-2 content-column">
-                        {{ block "right-sidebar" . }} {{ end }}
+                    <aside class="column is-2 sidebar">
+                        <div>
+                            {{ block "right-sidebar" . }} {{ end }}
+                        </div>
                     </aside>
             
                 </div>
             </div>
-        </div>
+
+        </section>
 
         {{ partial "footer.html" . }}
 
