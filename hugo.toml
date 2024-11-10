@@ -15,6 +15,11 @@ title = 'Jeff Stevens'
         startLevel = 2
         endLevel = 3
         ordered = false
+    [markup.highlight]
+        codeFenses = true
+        guessSyntax = false
+        lineNos = false
+        style = 'monokai'
 
 [params]
     name = "Jeffrey Stevens"
