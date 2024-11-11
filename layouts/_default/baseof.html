@@ -36,6 +36,10 @@
 
         {{ partial "footer.html" . }}
 
-        {{ partial "scripts.html" . }}
+        {{ if .Param "math" }}
+            {{ partialCached "scripts/mathjax.html" . }}
+        {{ end }}
+
+        {{ partial "scripts/scripts.html" . }}
     </body>
 </html>

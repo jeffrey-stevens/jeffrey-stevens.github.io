@@ -7,20 +7,33 @@ title = 'Jeff Stevens'
     tag = "tags"
 
 [permalinks]
-    posts = "/posts/:slug/"
     projects = "/projects/:slug/"
+    articles = "/articles/:slug/"
+    posts = "/posts/:slug/"
 
 [markup]
     [markup.tableOfContents]
         startLevel = 2
         endLevel = 3
         ordered = false
+
     [markup.highlight]
         codeFenses = true
         guessSyntax = false
         lineNos = false
         style = 'monokai'
 
+    [markup.goldmark]
+        [markup.goldmark.extensions]
+            [markup.goldmark.extensions.passthrough]
+                enable = true
+                [markup.goldmark.extensions.passthrough.delimiters]
+                    block = [['\[', '\]'], ['$$', '$$']]
+                    inline = [['\(', '\)']]
+
+
 [params]
     name = "Jeffrey Stevens"
     copyrightYear = 2024
+
+    math = false
