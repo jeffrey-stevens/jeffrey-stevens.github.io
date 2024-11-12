@@ -59,6 +59,7 @@
 * Navbar
   * After clicking a menu item, keep it selected
     * So that Categories only apples e.g. to Posts
+  * Add links to GitHub and LinkedIn
 
 * Posts
   * Highlight taxonomies pertaining to the post?

@@ -3,11 +3,20 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build-css": "sass assets/scss/main.scss static/css/main.css --no-source-map && postcss static/css/main.css -o static/css/main.css",
-    "watch-css": "sass --watch assets/scss/main.scss:static/css/main.css --no-source-map",
-    "serve": "hugo server",
-    "serve-draft": "hugo server -D",
-    "clean": "hugo --cleanDestinationDir"
+    "sass:build": "sass assets/scss/main.scss static/css/main.css --no-source-map --update",
+    "sass:watch": "sass --watch assets/scss/main.scss:static/css/main.css --no-source-map",
+    "hugo:build:prod": "hugo -gc --minify --cleanDestinationDir --environment production",
+    "hugo:build:dev": "hugo --environment -D --cleanDestinationDir --environment development",
+    "hugo:build": "npm run hugo:build:prod",
+    "hugo:serve:prod": "hugo server -gc --minify --cleanDestinationDir --environment production",
+    "hugo:serve:dev": "hugo server -D --cleanDestinationDir --environment development",
+    "clean": "hugo --cleanDestinationDir",
+    "build:prod": "npm run sass:build && npm run hugo:build:prod",
+    "build:dev": "npm run sass:build && npm run hugo:build:dev",
+    "build": "npm run build:prod",
+    "serve:prod": "npm run sass:build && npm run hugo:serve:prod",
+    "serve:dev": "npm run sass:build && npm run hugo:serve:dev",
+    "serve": "npm run serve:dev"
   },
   "keywords": [],
   "author": "",
@@ -16,7 +25,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.47",
-    "sass": "^1.80.5"
+    "sass": "^1.80.6"
   },
   "dependencies": {
     "bulma": "^1.0.2"
