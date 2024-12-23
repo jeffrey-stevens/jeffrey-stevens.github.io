@@ -36,12 +36,6 @@ jobs:
         with:
           node-version: '23.1.0'
 
-      - name: Install Node.js dependencies
-        run: npm ci
-
-      # SASS should be installed through NPM
-      # - name: Install Dart Sass
-      #   run: sudo snap install dart-sass
 
       - name: Install Hugo
         run: |
@@ -56,6 +50,13 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
+
+      - name: Install Node.js dependencies
+        run: npm ci
+
+      # SASS should be installed through NPM
+      # - name: Install Dart Sass
+      #   run: sudo snap install dart-sass
 
       - name: Setup GitHub Pages
         id: pages
