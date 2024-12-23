@@ -3,6 +3,7 @@
 ## Todos
 
 * Add license
+* Configure GitHub Actions to automatically build and host the website on GitHub Pages
 * Add an About page
 
 
