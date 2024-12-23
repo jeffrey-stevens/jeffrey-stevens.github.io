@@ -4,10 +4,18 @@
 
 * Add license
 * Configure GitHub Actions to automatically build and host the website on GitHub Pages
+* Audit NPM vulnerabilities
 * Add an About page
+* Add snippet and link to the algorithms visualization program
+  * Eventually, create a post about this
 
 
-## Fixes
+## Issues
+
+
+## Improvements
+
+### Fixes
 
 * Summaries for posts include headers, etc.
   * How to implement a summary paragraph?
@@ -16,7 +24,13 @@
 * Don't display ToC when there are no headings.
 
 
-## Styling improvements
+### Content additions
+
+* An About page
+* A Projects page about the algorithms visualization program
+
+
+### Styling
 
 * General
   * Need spacing between main area and navbar
@@ -36,26 +50,30 @@
 * Links
   * Dotted underline for title links?
 
+## Refactor
 
-## Tweaks
+
+### Tweaks
 
 * Don't collapse left column when switching to tablet mode.
 
 
-## Components
+## Features and functionality
+
+### Components
 
 * Toggle light/dark in navbar
 * Articles and blog vs. posts
 
 
-## Functionality
+### Functionality
 
 * Make responsive
 * List featured projects/articles/posts before all other content
 * On home page, include a link view more content
 
 
-## Features
+### Features
 
 * Navbar
   * After clicking a menu item, keep it selected
@@ -82,10 +100,7 @@
   * Make the ToC sidebar static
 
 
-## Refactor
-
-
-
-## Optional
+## Bundling, building and deployment
 
 * Bundle scripts with Hugo's js.Bundle function.
+* Integrate NPM audits into the workflow
